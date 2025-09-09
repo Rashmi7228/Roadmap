@@ -8,60 +8,60 @@
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background: url("road-image3.jpg") no-repeat ;
-    background-size: cover;
+    background: linear-gradient(to bottom, #6a11cb, #2575fc); /* blue-purple gradient */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size:auto; 
+    /* background-repeat: no-repeat; */
   }
 
   h1 {
-    text-align: left;
-    color: #b6ede4;
-    margin: 10px;
-    font-size: 32px;
+    text-align: center;
+    color: #ffffff;
+    margin: 20px 0;
+    font-size: 28px;
   }
 
   .road-container {
-    position: relative;
-    width: auto;
-    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
   }
 
   .navigator {
-    position: absolute;
-    background: radial-gradient(circle, #3a683d, #164019);
-
-    width: 90px;
-    height: 90px;
+    background: radial-gradient(circle, #4e54c8, #8f94fb); /* blue-purple navigator */
+    width: 120px;
+    height: 120px;
     overflow: hidden;
     text-align: center;
     padding: 10px;
+    border-radius: 15px;
+    display: flex;
+  
+    align-items: center;
   }
 
   .navigator img {
     width: 100%; 
-    height: auto;
-    display: block;
+    height: 100%;
   }
 
-  .opt1 { top: 170px; right: 550px; }
-  .opt2 { top: 323px; right: 250px; }
-  .opt3 { top: 450px; right: 452px; }
-
-  /* Labels */
   .option-label {
-    position: absolute;
-    color: #00332e;
-    font-size: 18px;
+    color: #ffffff;
+    font-size: 16px;
     font-weight: bold;
     text-align: center;
-    background: rgba(255, 255, 255, 0.5);
+    margin-top: 8px;
     padding: 4px 8px;
     border-radius: 6px;
-    display: inline-block;
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    display: inline-block ;
+    width: auto;
   }
 
-  .lbl1 { top: 150px; right: 450px; }
-  .lbl2 { top: 380px; right: 160px; }
-  .lbl3 { top: 569px; right: 567px; }
 </style>
 </head>
 <body>
@@ -69,20 +69,20 @@
 <h1>Roadmap After C Programming</h1>
 
 <div class="road-container">
-  <a href="cpp-dsa.html" class="navigator opt1">
+  <a href="cpp-dsa.html" class="navigator">
     <img src="cpp-logo.png" alt="C++ Logo">
   </a>
-  <a href="dsa-c.html" class="navigator opt2">
-    <img src="dsa logo.png" alt="DSA Logo" > 
+  <div class="option-label">C++ and DSA in C</div>
+
+  <a href="dsa-c.html" class="navigator">
+    <img src="dsa logo.png" alt="DSA Logo">
   </a>
-  <a href="java-core.html" class="navigator opt3">
+  <div class="option-label">DSA in C</div>
+
+  <a href="java-core.html" class="navigator">
     <img src="java-logo.png" alt="Java Logo">
   </a>
-
-  <!-- Labels -->
-  <div class="option-label lbl1">C++ and DSA in C</div>
-  <div class="option-label lbl2">DSA in C</div>
-  <div class="option-label lbl3">Java Core ( Collections, Frameworks)</div>
+  <div class="option-label">Java Core (Collections, Frameworks)</div>
 </div>
 
 </body>
